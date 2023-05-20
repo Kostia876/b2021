@@ -3,11 +3,11 @@ class Cat:
     def __init__(self,name):
         self.name=name
         self.gladness=20
-        self.food=0
+        self.food=10
         self.alive=True
     def to_run(self):
         print("час бігати!")
-        self.food+=0.12
+        self.food-=0.12
         self.gladness+=3
     def to_chill(self):
         print("час відпочити!")
@@ -22,7 +22,7 @@ class Cat:
         elif self.gladness<=0:
             print("скучно...")
             self.alive=False
-        elif self.food>5:
+        elif self.food>50:
             print("ви щясливі!")
             self.alive=False
     def end_of_day(self):
