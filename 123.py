@@ -19,4 +19,6 @@ print('\033[31m' + 'maximal')
 print('\033[39m') # and reset to default color
 init(autoreset=True)
 print(Fore.RED + ' red text')
-print('???')
+print(Fore and Back.BLUE + '???')
+print(Back.LIGHTGREEN_EX + 'maximal')
+print(Fore.LIGHTGREEN_EX + 'maximal')
